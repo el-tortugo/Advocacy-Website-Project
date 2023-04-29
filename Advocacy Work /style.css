@@ -1,0 +1,229 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
+}
+/* these all belong to my navbar (start)*/
+.navbar{
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgb(1, 13, 1)
+
+}
+li {
+  display: inline;
+  float: left
+
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Verlag,Helvetica,Arial,sans-serif
+}
+li a:hover {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+#theme-button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-family: Verlag,Helvetica,Arial,sans-serif;
+  background-color: #111;
+}
+#theme-button:hover{
+  color:blue;
+  font-weight: bold;
+}
+
+#reduceMotion {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-family: Verlag,Helvetica,Arial,sans-serif;
+  background-color: #111;
+}
+#reduceMotion:hover{
+  color:blue;
+  font-weight: bold;
+}
+/* these all belong to my navbar (end)*/
+
+
+.header-container{
+  display: flex;
+  color: white;
+  text-align: center;
+  font-family: Verlag,Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  background:url(https://www.amnesty.org/en/wp-content/uploads/2021/06/264706-scaled.jpg);
+}
+
+.content-header {
+  font-size: 20px;
+  margin: 100px 0px 50px;
+  
+}
+
+.content {
+  text-align: center;
+  padding: 20px 50px 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+
+}
+.oceans{
+  padding: 10px;
+  border: 5px solid aqua;
+  color: whitesmoke;
+  margin: 20px 20px 20px;
+    background:url(https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1652341068/EducationHub/photos/ocean-waves.jpg)
+
+}
+
+.precipitation {
+  padding: 5px;
+  border: 5px solid gray;
+  justify-content: space-between;
+  margin: 20px 20px 20px;
+  background:url(https://www.sciline.org/wp-content/uploads/2021/02/cropped-Torrential-Rain-Flooding-and-Climate-Change.jpg);
+  color:whitesmoke
+}
+.poverty {
+  padding: 10px;
+  justify-content: space-between;
+  border: 5px solid darkseagreen;
+  margin: 20px 20px 20px;
+  background:url(https://i0.wp.com/www.directrelief.org/wp-content/uploads/2019/07/South-Asia-6.jpg?fit=1800%2C1013&ssl=1);
+  background-position: center;
+  color: whitesmoke
+}
+.solutions {
+  display: inline-block;
+  padding: 5px;
+  border: 7px dashed darkgreen;
+  justify-content: space-between;
+  margin: 20px 20px 20px;
+}
+
+.footer {
+  color: whitesmoke;
+  background-color: rgb(1, 1, 1);
+  margin: 20px 20px 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center
+  
+}
+.petition-container {
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+}
+.petition-para {
+  width: 55%;
+  padding-right:40px;
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+  }
+
+.dark-mode {
+  background-color: black;
+  color:white;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* Modal */ 
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#close-modal-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* End Modal */
