@@ -1,4 +1,4 @@
-# Advocacy-Website-Project
+# Advocacy Website Project
 
 Hello All, this is my first ever web development project made for CodePath.
 It was made in order to complete the Web Developement 101 course, and showcases all of the basics I have learned in HTML, CSS and Javascript.
